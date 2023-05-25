@@ -11,15 +11,15 @@ def merge_sort(arr):
     right_arr = merge_sort(right_arr)
 
     sorted_arr = []
-    left_idx = right_idx =0
+    left_idx = right_idx = 0
 
     while left_idx < len(left_arr) and right_idx < len(right_arr):
         if left_arr[left_idx] < right_arr[right_idx]:
             sorted_arr.append(left_arr[left_idx])
-            left_idx +=1
+            left_idx += 1
         else:
             sorted_arr.append(right_arr[right_idx])
-            right_idx+=1
+            right_idx += 1
 
     sorted_arr.extend(left_arr[left_idx:])
     sorted_arr.extend(right_arr[right_idx:])
