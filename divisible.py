@@ -1,8 +1,7 @@
 """Find all the numbers which are divisible by a user input number in the array"""
 
 
-
-def divisible_number(arr,num_given):
+def divisible_number(arr, num_given):
     divisible_numbers = []
     left_number = []
     for num in arr:

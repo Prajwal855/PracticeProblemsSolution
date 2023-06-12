@@ -9,6 +9,7 @@ def permutation(word, current =''):
             rem = word[:letter] + word[letter+1:]
             permutation(rem, current + word[letter])
 
+
 if __name__ == '__main__':
     word = input("Enter the Word Dude : ")
     permutation(word=word)
